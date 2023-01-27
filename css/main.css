@@ -42,7 +42,7 @@ body, html {
 }
 
 .slider__wrapper {
-  transition: var(--transition)!important;
+  transition: var(--transition);
   will-change: transform;
 }
 
@@ -59,14 +59,14 @@ body, html {
   background-size: cover;
   position: absolute;
   left: -100%;
-  transition: var(--transition)!important;
+  transition: var(--transition);
   will-change: transform;
 
 }
 
 .slider_bg {
   z-index: 0;
-  transform: rotate(-20deg)!important;
+  transform: rotate(-20deg);
   top: -90vh;
   left: -10vh;
   opacity: .15;
@@ -77,7 +77,11 @@ body, html {
   max-height: 100vh;
 }
 
-
+.slider__item.opened {
+  z-index: 2;
+  transform: rotate(-15deg) scale(1.45);
+  box-shadow: rgb(0 0 0 / .75) 0 0 0 10000px;
+}
 
 .description {
 position: absolute;
