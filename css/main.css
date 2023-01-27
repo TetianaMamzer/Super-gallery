@@ -36,7 +36,6 @@ body, html {
 
 .slider {
   height: 100%;
-  max-width: 65vw;
   transform: rotate(15deg);
   overflow: visible;
   top: 10vh;
@@ -85,7 +84,7 @@ position: absolute;
 font-size: calc(var(--sizeindex) * .8);
 top: 20vh;
 left: 8vw;
-max-width: 35vh;
+max-width: 25vh;
 
 
 transition: opacity var(--transition), transform var(--transition);
